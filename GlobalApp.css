@@ -1,0 +1,406 @@
+/* for tablets and Desktops*/
+
+html{
+   scroll-behavior: smooth;
+  }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-head{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: red;
+  padding: 0;
+  font-weight: bolder;
+  position: relative;
+  left: 30px;
+  margin: 0;
+  background-repeat: none;
+  background-position: var(--body-bg);
+  text-shadow: 0 0 20px green;
+}
+
+.nav-head span{
+ font-size: 30px;
+ margin: 0;
+}
+
+
+.container {
+  text-align: center;
+  padding:  20px;
+  display: block;
+}
+
+.headline {
+  font-size: 3rem;
+  margin-top: 10% ;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(238, 238, 243);
+  text-shadow:  0 0 20px #df0a0a;
+}
+
+.glow-btn {
+  background: none;
+  border: 2px solid red;
+  color: white;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  text-shadow: 0 0 5px #00ffff;
+  box-shadow: 0 0 10px red;
+  transition: 0.3s ease;
+}
+
+.glow-btn:hover {
+  background-color: red;
+  color: #000;
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #0099ff;
+}
+
+.features {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   gap: 20px;
+   justify-self: center;
+   cursor: pointer;
+   flex-wrap: wrap;
+}
+
+.feature-box {
+  background-color: rgb(245, 240, 240);
+  border: 5px solid #1a0f1133;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  width: 500px;
+  margin: 20px;
+  color: rgb(75, 6, 6);
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 0 0 5px #f1eeef;
+}
+
+.feature-box:hover{
+  transition: 1s ease;
+  background: #0099ff;
+  color: white;
+  text-shadow: 0 0 5px #a50721;
+  border: 5px solid #d8083833;
+}
+
+
+#wel-login-btn{
+ position: absolute;
+ top: 30px;
+ right: 90px;
+ width: 100px;
+ height: 40px;
+ background-color: #000;
+ color: #0099ff;
+ text-shadow: 0 0 20px red;
+ box-shadow: 0 0 20px white inset;
+ border-radius: 15px;
+ border: none;
+ cursor: pointer;
+}
+
+#wel-login-btn:hover,
+#wel-login-btn:active{
+ transition: 0.7s;
+ font-weight: bolder;
+ box-shadow: 0 0 20px white inset, 0 0 20px red;
+}
+
+#app-container{
+ display: block;
+}
+
+.buttons{
+   display: flex;
+   margin-top: 50px;
+   justify-self: center;
+  }
+
+
+
+
+/* For mobile Smartphone */
+
+
+
+@media (max-width:600px) {
+ html{scroll-behavior: smooth;}
+
+.container{
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ padding-left: 0;
+}
+
+#app-container{
+ display: block;
+ transition: 0.5s;
+}
+
+
+.nav-head span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+  #menu-btn{
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+ }
+
+ .nav-head{
+    font-size: 25px;
+    transition: 1s;
+ }
+
+ .features {
+    display: flex;
+    justify-self: center;
+    margin-top: 50px;
+    width: 80%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-box {
+    background: #e4dfdf;
+    border: 5px solid #b91a3ff6;
+    border-radius: 10px;
+    padding: 15px;    
+    align-self: center;
+    margin: 20px;
+    color: rgb(14, 3, 3);
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px #a50721;
+  }
+
+  .feature-box:hover{
+    transition: 0.3 ease;
+    background-color: rgba(114, 12, 12, 0.747);
+    color: white;
+    box-shadow: 0 0 20px rgb(40, 92, 235);
+    text-shadow: 0 0 5px #a50721;
+    border: 5px solid #d8083833;
+  }
+
+  .headline {
+    font-size:30px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25%;
+    font-weight: bolder;
+    color: rgb(250, 249, 249);
+    text-shadow: 0 0 10px #ac032d, 0 0 20px #9f77e9;
+  }
+
+  .glow-btn {
+    background: none;
+    border: 2px solid red;
+    color: white;
+    padding: 12px 24px;
+    margin: 10px 20px 12px 5px;
+    font-size: 12px;
+    gap: 20px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 0 0 5px #00ffff;
+    box-shadow: 0 0 30px rgb(180, 18, 18);
+    transition: 0.3s ease;
+  }
+  
+  .glow-btn:hover {
+    background-color: red;
+    color: #000;
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #0099ff;
+  }
+
+  #tracker{
+   margin-left: 18px;
+  }
+  
+  #wel-login-btn{
+    position: absolute;
+    top: 40px;
+    height: 30px;
+    width: 70px;
+    right: 20px;
+    background-color: inherit;
+    color: #0099ff;
+    text-shadow: 0 0 20px red;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  #wel-login-btn:hover,
+  #wel-login-btn:active{
+    transition: 0.7s;
+    font-weight: bolder;
+    box-shadow: 0 0 20px white inset, 0 0 20px red;
+  }
+
+  .buttons{
+   display: flex;
+   margin-top: 50px;
+   justify-self: center;
+  }
+}
+
+/*for the login page*/
+
+
+.loghead{
+     font-size: 30px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: red;
+     text-shadow: 0 2px 20px white, 0 2px 20px blue;
+  }
+
+  #authModal{
+     display:none;
+     justify-self: center;
+     align-items: center;
+     z-index: 1000;
+     transition: 0.5s;
+  }
+  
+  
+  .auth-container {
+     transition: 0.5s;
+     background: #111;
+     color: white;
+     padding: 20px;
+     width: 90%;
+     max-width: 300px;
+     height: 450px;
+     max-height: 1000px;
+     border-radius: 20px;
+     text-align: center;
+     z-index: 1000;
+     opacity: 0;
+     justify-self: center;
+     margin-top: 50%;
+     position: relative;
+     border: 1px solid white;
+     animation: spinin 2s both;
+  }
+
+  @keyframes spinin {
+   0%{opacity: 0; transform: rotate(0deg);}
+   100%{opacity: 1; transform: rotateY(360deg);}
+  }
+
+  .close-btn {
+     position: absolute;
+     right: 15px;
+     top: 10px;
+     cursor: pointer;
+     font-size: 20px;
+  }
+
+  .tabs button {
+     padding: 10px 20px;
+     border: none;
+     background: #222;
+     color: white;
+     cursor: pointer;
+  }
+
+  
+  .tabs button.active {
+     background: #00f0ff;
+     color: black;
+  }
+  .form {
+     margin-top: 20px;
+     display: none;
+  }
+  .form.active { display: block; }
+  .form input {
+     width: 90%;
+     padding: 10px;
+     margin: 15px 0;
+     border-radius: 20px;
+     border-top: none;
+     height: 20px;
+     font-weight: bolder;
+  }
+  .oauth-btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     padding: 10px;
+     margin-top: 5px;
+     background: #f0eded;
+     justify-self: center;
+     border-radius: 20px;
+     color: black;
+     font-weight: bolder;
+     width: 90%;
+     border: none;
+     cursor: pointer;
+  }
+  .oauth-btn img {
+     width: 20px;
+     height: 20px;
+  }
+
+
+  
+  @media (min-width: 768px) {
+     .auth-container {
+        width: 400px;
+     }
+  }
+
+  #subbutton{
+     width: 50%;
+     height: 30px;
+     border-radius: 10px;
+     background-color: #111;
+     color: white;
+     transition: 0.5s;
+     margin-top: 20px;
+     margin-bottom: 5px;
+     cursor: pointer;
+
+  }
+
+  #subbutton:hover{
+     background: red;
+     box-shadow: 0 0 30px red;
+     border: none;
+     outline: none;
+     cursor: pointer;
+  }
